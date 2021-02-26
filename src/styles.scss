@@ -1,0 +1,103 @@
+@import './style/reset.css';
+@import './style/counting.scss';
+// * {
+//   outline: 1px solid red;
+// }
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.gallery {
+  width: 100%;
+  margin: 60px auto;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+  @media screen and (min-width: 900px) {
+    width: calc(900px - 20%);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(1200px - 20%);
+  }
+}
+.gallery__list {
+  margin: -40px;
+  @media screen and (min-width: 900px) {
+    margin: -20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.gallery__list__item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  &:first-child {
+    & .gallery__list__item__image {
+      border: solid 5px rgb(219, 20, 20);
+    }
+  }
+
+  @media screen and (max-width: 899px) {
+    width: 300px;
+    margin: 40px auto;
+  }
+  @media screen and (min-width: 900px) and( max-width:1199px) {
+    width: calc(100% / 3);
+    margin: 20px;
+    &:nth-child(2n + 1) {
+      & .gallery__list__item__image {
+        border: solid 5px rgb(219, 20, 20);
+      }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: 20px;
+    width: calc(100% / 5);
+    &:nth-child(4n + 1) {
+      & .gallery__list__item__image {
+        border: solid 5px rgb(219, 20, 20);
+      }
+    }
+  }
+
+  &:hover .gallery__list__item__image {
+    border: solid 5px yellow;
+    transform: rotate(45deg);
+  }
+}
+.gallery__list__item__image {
+  display: block;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: solid 5px rgb(59, 58, 58);
+  background-color: rgba(128, 128, 128, 0.5);
+  border-radius: 50%;
+  transition: transform 500ms linear;
+  @media screen and (min-width: 900px) and( max-width:1199px) {
+    width: 250px;
+    height: 250px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 200px;
+    height: 200px;
+  }
+}
+.gallery__list__item__icon::after {
+  position: absolute;
+  content: '';
+  background-image: url(./images/1.jpg);
+  height: 20px;
+  width: 20px;
+  bottom: -40px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
