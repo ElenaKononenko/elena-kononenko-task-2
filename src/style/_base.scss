@@ -1,0 +1,39 @@
+body {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.33;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.section {
+  width: 100%;
+  margin: 60px auto;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+  @media screen and (min-width: 900px) {
+    width: calc(900px - 20%);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(1200px - 20%);
+  }
+}
+.is_hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}

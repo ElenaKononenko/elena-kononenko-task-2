@@ -4,168 +4,177 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     <title>Elena Kononenko tasc-2</title>
   </head>
-
   <body>
-    <section class="gallery">
+    <section class=" section gallery">
       <div class="container">
         <h1 class="gallery__tittle">Gallery</h1>
         <div class="counting">
           <div class="date">
-            <h2 class="date__label">Date</h2>
-            <p class="date__value">11</p>
+            <h2 class="label">Date</h2>
+            <p class="date__value"  id="date__value">0</p>
           </div>
 
           <div class="picture">
-            <h2 class="picture__label">Picture</h2>
-            <p class="picture__value">11</p>
+            <h2 class="label">Picture</h2>
+            <p class="picture__value" id="picture__value">0</p>
           </div>
 
-          <button type="button" id="button">Пуск</button>
+          <button class="button" type="button" id="button">Start</button>
         </div>
       
 
       
-        <ul class="gallery__list">
+        <ul class="gallery__list" id="gallery__list">
           <li class="gallery__list__item list">
             
               <img
                 class="gallery__list__item__image"
                 src="./images/1.jpg"
-                alt=""
+                alt="port"
                 width="300px"
                 height="300px"
               />
            
-            <div class="gallery__list__item__icon"></div>
+            <div class="gallery__list__item__icon" id="icon"></div>
           </li>
           <li class="gallery__list__item list">
            
               <img
                 class="gallery__list__item__image"
                 src="./images/2.jpg"
-                alt=""
+                alt="port"
                 width="300px"
                 height="300px"
               />
            
-            <div class="gallery__list__item__icon"></div>
+            <div class="gallery__list__item__icon" id="icon"></div>
           </li>
           <li class="gallery__list__item list">
            
               <img
                 class="gallery__list__item__image"
                 src="./images/3.jpg"
-                alt=""
+                alt="airplane"
                 width="300px"
                 height="300px"
               />
             
-            <div class="gallery__list__item__icon"></div>
+            <div class="gallery__list__item__icon" id="icon"></div>
           </li>
           <li class="gallery__list__item list">
            
               <img
                 class="gallery__list__item__image"
                 src="./images/4.jpg"
-                alt=""
+                alt="truck"
                 width="300px"
                 height="300px"
               />
            
-            <div class="gallery__list__item__icon"></div>
+            <div class="gallery__list__item__icon" id="icon"></div>
           </li>
           <li class="gallery__list__item list">
           
               <img
                 class="gallery__list__item__image"
                 src="./images/5.jpg"
-                alt=""
+                alt="truck hay"
                 width="300px"
                 height="300px"
               />
           
-            <div class="gallery__list__item__icon"></div>
+            <div class="gallery__list__item__icon" id="icon"></div>
           </li>
           <li class="gallery__list__item list">
             
               <img
                 class="gallery__list__item__image"
                 src="./images/6.jpg"
-                alt=""
+                alt="containers"
                 width="300px"
                 height="300px"
               />
            
-            <div class="gallery__list__item__icon"></div>
+            <div class="gallery__list__item__icon" id="icon"></div>
           </li>
           <li class="gallery__list__item list">
            
               <img
                 class="gallery__list__item__image"
                 src="./images/7.jpg"
-                alt=""
+                alt="truck"
                 width="300px"
                 height="300px"
               />
            
-            <div class="gallery__list__item__icon"></div>
+            <div class="gallery__list__item__icon" id="icon"></div>
           </li>
           <li class="gallery__list__item list">
            
               <img
                 class="gallery__list__item__image"
                 src="./images/8.jpg"
-                alt=""
+                alt="truck"
                 width="300px"
                 height="300px"
               />
            
-            <div class="gallery__list__item__icon"></div>
+            <div class="gallery__list__item__icon" id="icon"></div>
           </li>
           <li class="gallery__list__item list">
               <img
                 class="gallery__list__item__image"
                 src="./images/9.jpg"
-                alt=""
+                alt="barge"
                 width="300px"
                 height="300px"
               />
-            <div class="gallery__list__item__icon"></div>
+            <div class="gallery__list__item__icon" id="icon"></div>
           </li>
           <li class="gallery__list__item list">
               <img
                 class="gallery__list__item__image"
                 src="./images/10.jpg"
-                alt=""
+                alt="truck"
                 width="300px"
                 height="300px"
               />
-            <div class="gallery__list__item__icon"></div>
+            <div class="gallery__list__item__icon" id="icon"></div>
           </li>
           <li class="gallery__list__item list">
               <img
                 class="gallery__list__item__image"
                 src="./images/11.jpg"
-                alt=""
+                alt="truck airplane"
                 width="300px"
                 height="300px"
               />
-            <div class="gallery__list__item__icon"></div>
+            <div class="gallery__list__item__icon" id="icon"></div>
           </li>
           <li class="gallery__list__item list">
               <img
                 class="gallery__list__item__image"
                 src="./images/12.jpg"
-                alt=""
+                alt="barge"
                 width="300px"
                 height="300px"
               />
-            <div class="gallery__list__item__icon"></div>
+            <div class="gallery__list__item__icon" id="icon"></div>
           </li>
         </ul>
       </div>
+      </div>
+    </section>
+    <section class="modal " id="modal">
+      <div class="modal__overlay" id="modal__overlay"></div>
+       <div class="modal__body container">
+          <svg class="close" id="close__modal" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title/><g id="cross"><line class="cls-1" x1="7" x2="25" y1="7" y2="25"/><line class="cls-1" x1="7" x2="25" y1="25" y2="7"/></g></svg>
+          <h2>Gallery</h2>       
+          <img class="modal__body__picture" id="modal__body__picture" src="#" alt="" >
+         </img>
       </div>
     </section>
   </body>
